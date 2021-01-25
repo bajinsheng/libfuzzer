@@ -366,6 +366,7 @@ void Fuzzer::PrintFinalStats() {
   Printf("stat::new_units_added:          %zd\n", NumberOfNewUnitsAdded);
   Printf("stat::slowest_unit_time_sec:    %zd\n", TimeOfLongestUnitInSeconds);
   Printf("stat::peak_rss_mb:              %zd\n", GetPeakRSSMb());
+  Printf("stat::total_run_time:           %zd\n", secondsSinceProcessStartUp());
 }
 
 void Fuzzer::SetMaxInputLen(size_t MaxInputLen) {
